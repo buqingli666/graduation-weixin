@@ -986,3 +986,24 @@
   padding-right: 10rpx;
 }
 
+.meals-container {  
+  display: flex;  
+  flex-direction: column; /* 子元素垂直排列 */  
+  align-items: center; /* 子元素垂直居中 */  
+  padding: 30rpx; /* 容器内边距 */  
+  background-color: #ffffff;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}  
+.meals-title {  
+  font-size: 30rpx; /* 标题字体大小 */  
+  font-weight: bold; /* 标题字体加粗 */  
+  margin-bottom: 10rpx; /* 标题与文本之间的间距 */  
+  text-align: center; /* 文字居中 */
+  color: #e90000;
+}
+.meals-text {
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #e90000;
+}

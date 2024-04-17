@@ -46,9 +46,9 @@
   text-align: center;
 }
 .date-select .picker-view .item .itemTit.data-v-7d30bc3a {
-  font-size: 28rpx;
-  line-height: 30rpx;
-  padding-top: 18rpx;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  padding-top: 16rpx;
 }
 .date-select .picker-view .item .itemTit.data-v-7d30bc3a:last-child {
   font-size: 24rpx;
