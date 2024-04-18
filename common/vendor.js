@@ -4496,8 +4496,41 @@ var _index = __webpack_require__(/*! ../../utils/index.js */ 29);function _inter
     },
     // 去订单页面
     goOrder: function goOrder() {
-      uni.navigateTo({
-        url: '/pages/order/index' });
+      // uni.navigateTo({url: '/pages/order/index' });
+      wx.showActionSheet({  
+        itemList: ['堂食', '外送'],  
+        success: function (res) {  
+          switch (res.tapIndex) {  
+            case 0:  
+            wx.showModal({  
+              title: '提示',  
+              content: '如需本店用餐请填写备注！',  
+              success: function (res) {  
+                if (res.confirm) {  
+                  uni.navigateTo({  
+                    url: '/pages/order/index'
+                  });  
+                  console.log('用户确认在本餐厅用餐');  
+                } else if (res.cancel) {  
+                  console.log('用户取消在本餐厅用餐');  
+                }  
+              }  
+            });
+              break;  
+            case 1:  
+              // 用户选择了“外送”  
+              uni.navigateTo({  
+                url: '/pages/order/index'
+              });  
+              break;  
+            default:  
+              console.log('用户取消了选择');  
+          }  
+        },  
+        fail: function (res) {  
+          console.log('显示操作菜单失败', res);  
+        }  
+      });
 
     },
     // 加菜 - 添加菜品
