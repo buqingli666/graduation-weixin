@@ -20540,9 +20540,9 @@ function createAnimation(option, _this) {
 Object.defineProperty(exports, "__esModule", { value: true });exports.baseUrl = void 0;
 
 //请求nginx，由nginx将请求转发到后端服务
-var baseUrl = 'http://localhost:8080';
+// var baseUrl = 'http://localhost:8080';
 //线上环境请求的地址
-// var baseUrl = 'http://60.205.190.23:8080';
+var baseUrl = 'http://60.205.190.23:8080';
 
 exports.baseUrl = baseUrl;
 
