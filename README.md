@@ -91,15 +91,7 @@ graduation-weixin/
 ]
 ```
 
-## 四、小程序配置说明
-
-`project.config.json` 关键配置：
-
-- **AppID**：`wxc9cbafa431b8fc20`（需替换为您自己的小程序 AppID，或在测试时使用「测试号」）。
-- **导航栏**：标题「味之轻舟」，背景色 `#E95F3C`（橙色），白色文字。
-- **`urlCheck`**：已关闭（`false`），允许在开发环境请求本地后端域名。
-
-## 五、快速开始
+## 四、快速开始
 
 ### 环境要求
 
@@ -128,7 +120,7 @@ graduation-weixin/
 
 在微信开发者工具中点击「编译」即可在模拟器中预览，或点击「预览」扫码在真机调试。
 
-## 六、业务流程
+## 五、业务流程
 
 ```
 微信登录(wx.login)
@@ -140,14 +132,14 @@ graduation-weixin/
                            └─ 查看订单/历史订单/订单详情
 ```
 
-## 七、相关仓库
+## 六、相关仓库
 
 本项目为「味之轻舟」系统的用户端，配套仓库：
 
 - 后端服务：[graduation-backend](https://github.com/buqingli666/graduation-backend)
 - 管理端（Vue）：[graduation-vue](https://github.com/buqingli666/graduation-vue)
 
-## 八、注意事项
+## 七、注意事项
 
 1. 本仓库为 **uni-app 编译产物**，若需深度二次开发，建议基于 uni-app 源工程进行修改后重新编译。
 2. 生产上线前，请在微信公众平台配置 **request 合法域名** 与 **微信支付商户号** 等参数。
