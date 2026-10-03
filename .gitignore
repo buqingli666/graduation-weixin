@@ -12,3 +12,13 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
+miniprogram_npm/
+dist/
+
+# 微信小程序专属
+project.private.config.json
+*.log
+
+# 编辑器目录
+.idea/
+.vscode/
