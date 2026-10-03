@@ -96,7 +96,6 @@ graduation-weixin/
 `project.config.json` 关键配置：
 
 - **AppID**：`wxc9cbafa431b8fc20`（需替换为您自己的小程序 AppID，或在测试时使用「测试号」）。
-- **项目名称**：`sky-take-out`。
 - **导航栏**：标题「味之轻舟」，背景色 `#E95F3C`（橙色），白色文字。
 - **`urlCheck`**：已关闭（`false`），允许在开发环境请求本地后端域名。
 
